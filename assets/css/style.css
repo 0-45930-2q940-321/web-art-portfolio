@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+/* CSS HEX */
+
+:root {
+    --mine-shaft: #242424;
+    --cod-gray: #1c1c1c;
+    --shadow: #080808;
+    --cod-gray: #141414;
+    --alamo: #310303;
+    --black: #040404;
+    --revolver: #241028;
+    --black-bean: #08180c;
+    --ebony: #080c14;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Contrail One', cursive;
+    scroll-behavior: smooth;
+}
+
+/* ----------------------------------------------------BANNER */
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----------------------------------------------------NAME */
+
+.home .name a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 30px 60px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    box-shadow: 0 20px 50px rgba(255, 255, 255, .5);
+    backdrop-filter: saturate(120%) blur(10px);
+    overflow: hidden;
+    font-family: 'Gruppo', cursive;
+}
+
+.name a:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+}
+
+.name a span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #979797, #fff);
+    animation: namebordertop 2s linear infinite;
+}
+
+.name a span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #979797, #fff);
+    animation: nameborderright 2s 1s linear infinite;
+}
+
+.name a span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #979797, #fff);
+    animation: nameborderbottom 2s linear infinite;
+}
+
+.name a span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, #979797, #fff);
+    animation: nameborderleft 2s 1s linear infinite;
+}
+
+/* ----------------------------------------------------NAME */
+
+.home .name p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.home header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.home header .tab {
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3.5px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.tab:hover {
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    background: rgb(236, 236, 236);
+}
+
+.home ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 30px;
+}
+
+.home nav {
+    display: flex;
+    padding: 20px 50px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 2);
+    color: black;
+    background-color: #fff;
+    border: 3px solid grey;
+    border-radius: 100px;
+}
+
+.home a {
+    padding: 1px 20px;
+}
+
+.text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* ----------------------------------------------------BANNER END */
+
+/* ----------------------------------------------------ABOUT START */
+
+.about {
+    width: 100%;
+    display: flex;
+}
+
+.about .content {
+    background: var(--ebony);
+    padding: 100px;
+    width: 50%;
+}
+
+.about p {
+    position: relative;
+    bottom: 80px;
+    font-size: 30px;
+}
+
+.about-heading {
+    position: relative;
+    bottom: 80px;
+    border-bottom: 1px solid white;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 80px;
+}
+
+.about-heading h2 {
+    border: 3px solid white;
+    padding: 100px;
+}
+
+.contact-text {
+    position: relative;
+    top: 10px;
+}
+
+.column {
+    display: flex;
+    margin: auto;
+}
+
+/* YUH */
+
+/* YUH */
+
+/* ----------------------------------------------------ABOUT END */
+
+/* ----------------------------------------------------WORK START */
+
+.work {
+    padding: 100px;
+    background: var(--alamo);
+    text-align: center;
+}
+
+.work p {
+    font-size: 30px;
+}
+
+.work-heading {
+    border-bottom: 1px solid white;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    Letter-spacing: 1px;
+}
+
+.work-text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    Letter-spacing: 1px;
+    position: relative;
+    top: 20px;
+}
+
+.work-heading h2 {
+    border: 3px solid white;
+}
+
+.all-work ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    border: 1px solid black;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.all-work li {
+    background-color: black;
+    list-style-type: none;
+    padding: 255px 315px;
+    transition: .2s ease-in-out;
+    font-size: 55px;
+    color: white;
+    font-family: 'Unica One', cursive;
+    cursor: pointer;
+}
+
+.all-work a {
+    color: white;
+    text-decoration: none;
+}
+
+.all-work li:hover {
+    transform: scale(1.05);
+    border: 1px solid white;
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 2);
+}
+
+/* ----------------------------------------------------SPECIFIC WORK EDITS STARTS*/
+
+.all-work li:first-child {
+    border-right: 1px solid white;
+    border-bottom: 1px solid;
+}
+
+.all-work li:nth-child(2) {
+    border-right: 1px solid white;
+    border-bottom: 1px solid;
+}
+
+.all-work li:nth-child(3) {
+    border-bottom: 1px solid;
+}
+
+.all-work li:nth-last-child(3) {
+    border-right: 1px solid white;
+}
+
+.all-work li:nth-last-child(2) {
+    border-right: 1px solid white;
+}
+
+.all-work li:first-child:hover {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.all-work li:nth-child(2):hover {
+    animation: glow2 1s ease-in-out infinite alternate;
+}
+
+.all-work li:nth-child(3):hover {
+    animation: glow3 1s ease-in-out infinite alternate;
+}
+
+.all-work li:nth-last-child(3):hover {
+    animation: glow4 1s ease-in-out infinite alternate;
+}
+
+.all-work li:nth-last-child(2):hover {
+    animation: glow5 1s ease-in-out infinite alternate;
+}
+
+.all-work li:last-child:hover {
+    animation: glow6 1s ease-in-out infinite alternate;
+}
+
+/* ----------------------------------------------------SPECIFIC WORK EDITS END */
+
+/* ----------------------------------------------------CONTACT START */
+
+.contact {
+    padding: 100px;
+    background: var(--shadow);
+    text-align: center;
+}
+
+.contact p {
+    font-size: 30px;
+}
+
+.contact h2 {
+    color: #fff;
+    font-size: 30px;
+    border-bottom: 1px solid #fff;
+}
+
+/* ----------------------------------------------------CONTACT END */
+
+/* ----------------------------------------------------FORM START */
+
+.format {
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+
+.format .content {
+    background: var(--ebony);
+    padding: 100px;
+    width: 50%;
+}
+
+.format p {
+    font-size: 30px;
+}
+
+.row {
+    background-color: var(--ebony);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.column2 {
+    display: flex;
+    margin: auto;
+}
+
+.formBg {
+    background-color: var(--revolver) !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.form .inputBox {
+    margin-bottom: 40px;
+    position: relative;
+    top: 200px;
+}
+
+.form .inputBox input {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300px;
+    border-bottom: 2px solid #fff;
+}
+
+.form .inputBox input::placeholder {
+    color: #fff;
+}
+
+.form .inputBox textarea {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.form .inputBox textarea::placeholder {
+    color: #fff;
+}
+
+.form .inputBox input[type="submit"] {
+    width: 150px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    font-weight: 400
+}
+
+/* ----------------------------------------------------FORM END */
+
+/* ----------------------------------------------------ANIMATION START */
+
+@keyframes namebordertop {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes nameborderright {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes nameborderbottom {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes nameborderleft {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes glow {
+    from {
+        background-color: var(--cod-gray);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        background-color: var(--shadow);
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+@keyframes glow2 {
+    from {
+        background-color: var(--cod-gray);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff3300, 0 0 40px #ff3300, 0 0 50px #ff3300, 0 0 60px #ff3300, 0 0 70px #ff3300;
+    }
+    to {
+        background-color: var(--shadow);
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4800, 0 0 40px #ff4800, 0 0 50px #ff4800, 0 0 60px #ff4800, 0 0 70px #ff4800, 0 0 80px #ff4800;
+    }
+}
+
+@keyframes glow3 {
+    from {
+        background-color: var(--cod-gray);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bb9900, 0 0 40px #bb9900, 0 0 50px #bb9900, 0 0 60px #bb9900, 0 0 70px #bb9900;
+    }
+    to {
+        background-color: var(--shadow);
+        text-shadow: 0 0 20px #fff, 0 0 30px #bbff00, 0 0 40px #bbff00, 0 0 50px #bbff00, 0 0 60px #bbff00, 0 0 70px #bbff00, 0 0 80px #bbff00;
+    }
+}
+
+@keyframes glow4 {
+    from {
+        background-color: var(--cod-gray);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #008141, 0 0 40px #008141, 0 0 50px #008141, 0 0 60px #008141, 0 0 70px #008141;
+    }
+    to {
+        background-color: var(--shadow);
+        text-shadow: 0 0 20px #fff, 0 0 30px #00ff80, 0 0 40px #00ff80, 0 0 50px #00ff80, 0 0 60px #00ff80, 0 0 70px #00ff80, 0 0 80px #00ff80;
+    }
+}
+
+@keyframes glow5 {
+    from {
+        background-color: var(--cod-gray);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #003b94, 0 0 40px #003b94, 0 0 50px #003b94, 0 0 60px #003b94, 0 0 70px #003b94;
+    }
+    to {
+        background-color: var(--shadow);
+        text-shadow: 0 0 20px #fff, 0 0 30px #3385ff, 0 0 40px #3385ff, 0 0 50px #3385ff, 0 0 60px #3385ff, 0 0 70px #3385ff, 0 0 80px #3385ff;
+    }
+}
+
+@keyframes glow6 {
+    from {
+        background-color: var(--cod-gray);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #6b00e6, 0 0 40px #6b00e6, 0 0 50px #6b00e6, 0 0 60px #6b00e6, 0 0 70px #6b00e6;
+    }
+    to {
+        background-color: var(--shadow);
+        text-shadow: 0 0 20px #fff, 0 0 30px #cb20ff, 0 0 40px #cb20ff, 0 0 50px #cb20ff, 0 0 60px #cb20ff, 0 0 70px #cb20ff, 0 0 80px #cb20ff;
+    }
+}
+
+/* ----------------------------------------------------ANIMATION END */
+
+/* ----------------------------------------------------MEDIA QUERIES */
+
+@media (max-width: 2476px) {
+    .all-work li:first-child {
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .all-work li:nth-child(2) {
+        border-right: none;
+        border-bottom: 1px solid;
+    }
+    .all-work li:nth-child(3) {
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .all-work li:nth-last-child(3) {
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+    .all-work li:nth-last-child(2) {
+        border-right: 1px solid;
+        border-bottom: 1px solid white;
+    }
+    .all-work li:last-child {
+        border-bottom: 1px solid white;
+    }
+}
+
+@media (max-width: 2199px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .about {
+        background-color: var(--ebony);
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-heading {
+        position: relative;
+        left: 530px;
+    }
+    .about p {
+        position: relative;
+        left: 530px;
+    }
+    .about img {
+        border: 1px white solid;
+        padding: 0;
+    }
+    .format {
+        flex-wrap: wrap;
+    }
+    .form .inputBox {
+        margin-bottom: 40px;
+        position: relative;
+        top: 0px;
+    }
+    .format .content {
+        width: 100%;
+    }
+    .form input {
+        width: 500px;
+    }
+}
+
+@media (max-width: 2000px) {
+    .about-heading {
+        position: relative;
+        left: 490px;
+    }
+    .about p {
+        position: relative;
+        left: 490px;
+    }
+    @media (max-width: 1900px) {
+        .about-heading {
+            position: relative;
+            left: 465px;
+        }
+        .about p {
+            position: relative;
+            left: 465px;
+        }
+    }
+}
+
+@media (max-width: 1800px) {
+    .about-heading {
+        position: relative;
+        left: 440px;
+    }
+    .about p {
+        position: relative;
+        left: 440px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .about-heading {
+        position: relative;
+        left: 415px;
+    }
+    .about p {
+        position: relative;
+        left: 415px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .about-heading {
+        position: relative;
+        left: 390px;
+    }
+    .about p {
+        position: relative;
+        left: 390px;
+    }
+}
+
+@media (max-width: 1651px) {
+    .all-work li:first-child {
+        border-right: none;
+        border-bottom: 1px solid;
+    }
+    .all-work li:nth-child(2) {
+        border-right: none;
+        border-bottom: 1px solid;
+    }
+    .all-work li:nth-child(3) {
+        border-right: none;
+        border-bottom: 1px solid;
+    }
+    .all-work li:nth-last-child(3) {
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+    .all-work li:nth-last-child(2) {
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+    .all-work li:last-child {
+        border-bottom: 1px solid white;
+    }
+}
+
+@media (max-width: 1500px) {
+    .about-heading {
+        position: relative;
+        left: 365px;
+    }
+    .about p {
+        position: relative;
+        left: 365px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .about-heading {
+        position: relative;
+        left: 340px;
+    }
+    .about p {
+        position: relative;
+        left: 340px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .about-heading {
+        position: relative;
+        left: 315px;
+        font-size: 25px;
+    }
+    .about p {
+        position: relative;
+        left: 315px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-heading {
+        position: relative;
+        left: 290px;
+    }
+    .about p {
+        position: relative;
+        left: 290px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about-heading {
+        position: relative;
+        right: 265px;
+    }
+    .about p {
+        position: relative;
+        left: 265px;
+    }
+}
+
+@media (max-width: 991px) {
+    .home {
+        padding: 50px;
+    }
+    .home header .tab {
+        font-size: 30px;
+    }
+    .home header {
+        padding: 20px 50px;
+    }
+    .home nav {
+        padding: 4px;
+        position: fixed; left: 265px; top: 20px;
+    }
+
+    .tab:hover {
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        background: rgb(236, 236, 236);
+    }
+
+    .home .name a {
+        font-size: 36px;
+    }
+    .name {
+        padding: 50px;
+    }
+    .about .content {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+    .about-heading {
+        position: relative;
+        left: 0;
+    }
+    .about p {
+        position: relative;
+        left: 0;
+    }
+    .contact h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 414px) {
+    .home header .tab {
+        font-size: 20px;
+    }
+
+    .home nav {
+        padding: 2px;
+        position: fixed; left: 15px; top: 10px;
+    }
+    .tab {
+        position: relative;
+        bottom: 5px;
+    }
+    .all-work {
+        overflow: hidden;
+    }
+    .all-work li {
+        padding: 100px;
+    }
+}
