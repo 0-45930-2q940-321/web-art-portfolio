@@ -28,6 +28,12 @@ img {
     pointer-events: none;
 }
 
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
 /* ----------------------------------------------------BANNER */
 
 .home {
@@ -226,10 +232,6 @@ img {
     margin: auto;
 }
 
-/* YUH */
-
-/* YUH */
-
 /* ----------------------------------------------------ABOUT END */
 
 /* ----------------------------------------------------WORK START */
@@ -410,6 +412,7 @@ img {
 }
 
 .form .inputBox input {
+    color: white;
     width: 100%;
     background: transparent;
     box-shadow: none;
@@ -587,11 +590,7 @@ img {
 }
 
 @media (max-width: 2199px) {
-    html, body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
+
     .about {
         background-color: var(--ebony);
         text-align: center;
