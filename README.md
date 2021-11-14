@@ -13,5 +13,23 @@ What I've learned and solved:
 
 3. I've learned using different CSS values and units. Expanding my positioning knowledge.
 
+4. I've learned object fit, so the img will stay the same size even when the width gets smaller.
 
+5. I've learned the !important forces/overrides style rulings. Used it to color the background of the text/form/input area
+
+6. I've kinda learned how to solve putting 2 images in a row. I still need to work on that.
+
+What I'll do next time:
+
+1. Learn grids in css
+
+2. Implement javascript
+
+3. Cooler animations
+
+4. Not include my artwork
+
+5. Not make everything so big
+
+6. Have actual projects linked/included
 

@@ -827,6 +827,6 @@ img {
         overflow: hidden;
     }
     .all-work li {
-        padding: 100px;
+        padding: 80px 100px;
     }
 }
