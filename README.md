@@ -2,7 +2,7 @@
 
 ///ALL THE ARTWORK BELONGS TO ME AND I DO NOT GIVE PERMISSION FOR REUSE.///
 
-This is my expanding web portfolio that will include my artwork aswell!
+# WIP Portfolio
 
 
 What I've learned and solved:
